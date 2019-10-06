@@ -1,0 +1,95 @@
+#配置服务器
+server:
+  port: 443
+  tomcat:
+    uri-encoding: UTF-8
+  ssl:
+    key-store: classpath:group.pfx
+    key-store-password: kB25O2W7
+    key-store-type: PKCS12
+  servlet:
+    context-path: /print
+
+
+#配置数据库
+spring:
+  jackson:
+    default-property-inclusion: non_null
+  datasource:
+    username: huize
+    password: huizekeji.
+    url: jdbc:mysql://39.108.232.17:3306/enter_print?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+  redis:
+    host: 39.108.232.17
+    port: 6379
+    password: 838860376abc
+    timeout: 5000
+    database: 1
+
+dubbo:
+  application:
+    name: enter-print
+    qos-port: 22222
+  registry:
+    address: redis://39.108.232.17:6379
+    username: root
+    password: 838860376abc
+  protocol:
+    name: dubbo
+    port: 4444
+  scan:
+    base-packages: com.enter.print
+
+
+
+
+  #  http:
+#    encoding:
+#      charset: UTF-8
+#      enabled: true
+#    multipart:
+#      max-file-size: 10MB
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+
+
+
+
+
+
+
+#配置文件上传
+
+#配置mybatis
+
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  configuration:
+    default-enum-type-handler: org.apache.ibatis.type.EnumTypeHandler
+    map-underscore-to-camel-case: true
+    cache-enabled: true
+  typeAliasesPackage: com.enter.print.entity
+
+
+#通用mapper
+mapper:
+  mappers:
+    - tk.mybatis.mapper.common.Mapper
+  notEmpty: true
+  enum-as-simple-type: true
+  # catalog: print
+  safe-delete: true
+
+
+
+#配置日志
+logging:
+  level:
+    com.enter.print: info
+  path: print/log
+  file: print.log
+debug: false

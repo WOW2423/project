@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mybatis.mapper.MerchantMapper">
+  <resultMap id="BaseResultMap" type="com.enter.print.pojo.entity.Merchant">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="user_id" jdbcType="VARCHAR" property="userId" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="wechat_number" jdbcType="VARCHAR" property="wechatNumber" />
+    <result column="online" jdbcType="BIT" property="online" />
+    <result column="enterprise_wx_id" jdbcType="VARCHAR" property="enterpriseWxId" />
+    <result column="district_id" jdbcType="INTEGER" property="districtId" />
+    <result column="district" jdbcType="VARCHAR" property="district" />
+    <result column="detail_address" jdbcType="VARCHAR" property="detailAddress" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="longitude" jdbcType="INTEGER" property="longitude" />
+    <result column="latitude" jdbcType="INTEGER" property="latitude" />
+    <result column="linkman" jdbcType="VARCHAR" property="linkman" />
+    <result column="telephone" jdbcType="VARCHAR" property="telephone" />
+    <result column="print_service_type" jdbcType="VARCHAR" property="printServiceType" />
+    <result column="distribution_area" jdbcType="VARCHAR" property="distributionArea" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="last_update_time" jdbcType="TIMESTAMP" property="lastUpdateTime" />
+    <result column="introduction" jdbcType="LONGVARCHAR" property="introduction" />
+  </resultMap>
+</mapper>

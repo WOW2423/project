@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/enter-print-parent.iml" filepath="$PROJECT_DIR$/enter-print-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/print-controller/print-controller.iml" filepath="$PROJECT_DIR$/print-controller/print-controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/print-dao/print-dao.iml" filepath="$PROJECT_DIR$/print-dao/print-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/print-service/print-service.iml" filepath="$PROJECT_DIR$/print-service/print-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/print-service-impl/print-service-impl.iml" filepath="$PROJECT_DIR$/print-service-impl/print-service-impl.iml" />
+    </modules>
+  </component>
+</project>

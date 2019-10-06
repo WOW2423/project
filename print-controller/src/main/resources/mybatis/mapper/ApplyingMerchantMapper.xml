@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.enter.print.mapper.ApplyingMerchantMapper">
+  <resultMap id="BaseResultMap" type="com.enter.print.pojo.entity.ApplyingMerchant">
+
+
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="user_id" jdbcType="VARCHAR" property="userId" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="enterprise_wx_id" jdbcType="VARCHAR" property="qywxId"/>
+    <result column="district" jdbcType="VARCHAR" property="district" />
+    <result column="detail_address" jdbcType="VARCHAR" property="detailAddress" />
+    <result column="linkman" jdbcType="VARCHAR" property="linkman" />
+    <result column="telephone" jdbcType="VARCHAR" property="telephone" />
+    <result column="create_time" jdbcType="DATE" property="createTime" />
+    <result column="last_update_time" jdbcType="DATE" property="lastUpdateTime" />
+  </resultMap>
+
+   <select id="selectIdByName" parameterType="java.lang.String" resultType="java.lang.Integer">
+     select id from applying_merchant where `name` = #{name,jdbcType=VARCHAR}
+   </select>
+</mapper>

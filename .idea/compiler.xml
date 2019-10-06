@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="print-controller" />
+        <module name="print-dao" />
+        <module name="print-service" />
+        <module name="print-service-impl" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="enter-print-parent" target="1.8" />
+      <module name="print-controller" target="1.8" />
+      <module name="print-dao" target="1.8" />
+      <module name="print-service" target="1.8" />
+      <module name="print-service-impl" target="1.8" />
+      <module name="print-utils" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
