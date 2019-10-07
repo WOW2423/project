@@ -1,5 +1,6 @@
 package com.enter.print.pojo.vo;
 
+import com.enter.print.pojo.dto.other.UserInfo;
 import com.enter.print.pojo.vo.infc.VoPackageHelper;
 import lombok.Data;
 
@@ -16,6 +17,7 @@ import java.util.List;
 public class CollectionVO implements Serializable,VoPackageHelper {
     private static final long serialVersionUID = -2897419220570466109L;
 
+    private UserInfo userInfo;
     /**
      * 个人收藏id
      */
@@ -50,4 +52,6 @@ public class CollectionVO implements Serializable,VoPackageHelper {
     public void setSons(List sons) {
 
     }
+
+
 }

@@ -6,7 +6,12 @@
     <file url="file://$PROJECT_DIR$/print-dao" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/print-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/print-service-impl" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/print-utils" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../service/fastdfs-client-java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../service/service-dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../service/service-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../service/service-service-impl" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../service/service-web" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

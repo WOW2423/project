@@ -1,8 +1,6 @@
 package com.enter.print.controller;
 
-import com.enter.print.pojo.vo.ApplyingMerchantVO;
-import com.enter.print.pojo.vo.MerchantVO;
-import com.enter.print.pojo.vo.WeChatProgramMerchantListVO;
+import com.enter.print.pojo.vo.*;
 import com.enter.print.result.ResultBean;
 import com.enter.print.service.ApplyingMerchantService;
 import com.enter.print.service.MerchantService;
@@ -46,5 +44,8 @@ public class MerchantController {
     public ResultBean getMerchantListByPageInfo(WeChatProgramMerchantListVO weChatProgramMerchantListVO) {
         return new ResultBean<>(merchantService.getMerchantListWithCitySchoolAndDistrict(weChatProgramMerchantListVO.getPageInfo()));
     }
-
+    @GetMapping("/getConnectionList")
+    public ResultBean getCollectionListByUserId(CollectionVO collectionVO){
+       return  new ResultBean<>(merchantService.getCollectionListWithUserID(collectionVO.getUserInfo()));
+    };
 }
