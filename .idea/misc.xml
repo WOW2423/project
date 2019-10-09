@@ -5,12 +5,16 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/../service/pom.xml" />
-        <option value="$PROJECT_DIR$/../service/fastdfs-client-java/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/print-utils/pom.xml" />
+        <option value="$PROJECT_DIR$/../service/pom.xml" />
+        <option value="$PROJECT_DIR$/../service/service-dao/pom.xml" />
+        <option value="$PROJECT_DIR$/../service/service-service-impl/pom.xml" />
+        <option value="$PROJECT_DIR$/../service/service-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../service/service-web/pom.xml" />
       </set>
     </option>
   </component>
